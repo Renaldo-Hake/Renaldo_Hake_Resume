@@ -35,9 +35,11 @@ header {
 }
 
 nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
+    margin-left: 50%;
 }
 
 nav ul {
@@ -45,6 +47,10 @@ nav ul {
     display: flex;
     justify-content: space-between;
     margin: 20px 50px;
+}
+
+nav ul li {
+    padding: 5px;
 }
 
 header div{
@@ -70,7 +76,7 @@ header p {
 
 /* ABOUT */
 .aboutContainer {
-    width: 50%;
+    width: 100%;
     margin: 5% auto;
     text-align: center;
     color: #333;
@@ -89,6 +95,11 @@ header p {
 
 .profile-pic img {
     border-radius: 50%;
+}
+
+.about-paragraph {
+    padding: 15px;
+    text-align: justify;
 }
 
 .proclamations {
@@ -120,6 +131,7 @@ header p {
     display: flex;
     padding: 2%;
     justify-content: space-between;
+    text-align: justify;
 }
 
 .containerSkill {
@@ -145,6 +157,14 @@ header p {
 }
 
 /* EXPERIENCE */
+#experience p {
+    padding: 50px;
+}
+#experience h5 {
+    width: 100%;
+    margin: auto;
+}
+
 .technologies {
     font-size: 50px;
 }
@@ -206,3 +226,49 @@ header p {
     margin: auto;
     padding-top: 50px;
 }
+
+/* MOBILE RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+    nav {
+        width: 100%;
+        margin: auto;
+    }
+
+    nav ul {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .whiteText {
+        width: 100%;
+    }
+
+    .aboutContainer {
+        width: 90%;
+        margin: auto;
+    }
+
+    .about-paragraph {
+        margin: 15px;
+        text-align: justify;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .containerSkill {
+        width: 100%;
+    }
+
+    #experience h5 {
+        padding-right: 20px;
+    }
+
+    .projectsContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 768px) {}

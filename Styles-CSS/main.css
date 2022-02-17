@@ -38,12 +38,12 @@ nav {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
     margin-left: 50%;
 }
 
 nav ul {
-    width: 20%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     margin: 20px 50px;
@@ -100,11 +100,15 @@ header p {
 .about-paragraph {
     padding: 15px;
     text-align: justify;
+    width: 70%;
+    margin: 1em auto;
 }
 
 .proclamations {
     background-color: rgb(218, 218, 218);
     margin: 20px 15px;
+    width: 60%;
+    margin: auto;
 }
 
 .proclamations h3 {
